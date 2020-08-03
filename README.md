@@ -61,6 +61,16 @@ To write an app using the SDK
       'client_secret': 'EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM'
     });
     ```
+  * Specify `proxy_url` to use a http(s) proxy.
+  
+    ```js
+    paypal.configure({
+      'mode': 'sandbox', //sandbox or live
+      'client_id': 'EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM',
+      'client_secret': 'EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM',
+      'proxy_url': 'https://username@password:proxy.host:1234'
+    });
+    ```
   * For multiple configuration support, have a look at the [sample](/samples/configuration/multiple_config.js)
   * Invoke the rest api (eg: create a PayPal payment) with required parameters (eg: data, config_options, callback).
 
